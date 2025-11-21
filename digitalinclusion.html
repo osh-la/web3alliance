@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Inclusion</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              dipBlue: "#0b66c3",
+              dipLight: "#f6f9fb",
+              dipMuted: "#6b7280",
+            },
+            fontFamily: {
+              "avant-garde": [
+                "ITC Avant Garde Gothic",
+                "Century Gothic",
+                "AvantGarde",
+                "sans-serif",
+              ],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .container {
+        max-width: 1100px;
+      }
+      .handwritten {
+        font-family: "Brush Script MT", cursive;
+        font-size: 60px;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: 500;
+        line-height: 40px;
+      }
+    </style>
+  </head>
+  <body class="bg-white text-gray-800 font-sans leading-relaxed">
+    <header class="bg-white shadow-sm sticky top-0 z-30">
+      <nav class="absolute text-black top-0 left-0 right-0 p-4 z-10">
+        <div class="flex justify-between">
+          <div class="text-2xl font-bold">
+            <img
+              class="w-10 h-10 md:w-12 md:h-12"
+              src="./src/images/icons/logo.jpeg"
+              alt=""
+            />
+          </div>
+          <div class="md:hidden">
+            <button
+              id="mobile-menu-button"
+              class="text-black focus:outline-none"
+            >
+              <svg
+                class="h-6 w-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16m-7 6h7"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="hidden md:flex space-x-4">
+            <a href="https://tribe.theweb3alliance.org/" class="hover:underline text-white"
+              >Web3.0Tribe</a
+            >
+            <a href="" class="hover:underline text-white">Web3.0Fest</a>
+          </div>
+        </div>
+      </nav>
+
+      <div
+        id="mobile-menu"
+        class="md:hidden fixed inset-0 bg-gray-800 bg-opacity-75 z-50 hidden"
+      >
+        <div class="flex justify-end p-4">
+          <button id="close-mobile-menu" class="text-black focus:outline-none">
+            <svg
+              class="h-6 w-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <div class="flex flex-col items-end p-4 space-y-4">
+          <a href="https://tribe.theweb3alliance.org/" class="text-white"
+            >Web3.0Tribe</a
+          >
+          <a href="http://web3.0fest.theweb3alliance.org/" class="text-white"
+            >Web3.0Fest</a
+          >
+        </div>
+      </div>
+    </header>
+    <section
+      class="h-screen flex items-center bg-[url('./src/images/digitalinclusion1.jpg')] bg-cover"
+    >
+      <section class="ml-10 w-1/2 space-y-10 text-white">
+        <h1 class="handwritten">
+          Bridging the digital divide, building community
+        </h1>
+        <p>
+          A program of Purpose Society, the Digital Inclusion Project provides
+          low-barrier access to devices, the Internet, and one-on-one digital
+          learning support in New Westminster, BC.
+        </p>
+        <button class="hover:bg-gray-50 py-4 px-10 bg-white text-black rounded-md">
+          Learn More
+        </button>
+      </section>
+    </section>
+    <section class="h-screen flex justify-center items-center">
+      <section class="text-center w-1/2 space-y-10">
+        <h1 class="handwritten">WHO WE ARE</h1>
+        <p>
+          The Digital Inclusion Project is a collaborative partnership between
+          the Lower Mainland Purpose Society, Douglas College, and other local
+          organizations working together to close the digital divide across New
+          Westminster by providing key resources, devices, and individualized
+          support.
+        </p>
+      </section>
+    </section>
+    <section
+      class="h-screen flex justify-center items-center bg-black text-white"
+    >
+      <h1 class="handwritten">OUR SERVICES</h1>
+    </section>
+    <section class="bg-blue-400 h-screen flex items-center overflow-hidden p-6">
+      <div class="bg-blue-800 w-2/3 h-2/3 absolute">
+        <img
+          class="h-full w-full object-cover"
+          src="./src/images/digitalinclusion2.jpg"
+          alt=""
+        />
+      </div>
+      <div class="bg-white w-[40vw] h-2/5 relative right-[-50vw] p-6">
+        <p>
+          The Digital Inclusion Hub is a space where folks can familiarize
+          themselves with technology and learn how to demystify the digital
+          world in a one-to-one setting. Access to community and vital services
+          is dependent on our ability to navigate the digital maze. This makes
+          the Digital Inclusion team’s work critical for marginalized
+          populations.
+        </p>
+        <h2 class="font-black text-xl">-Terry, Digital Inclusion Hub Client</h2>
+      </div>
+    </section>
+    <section class="h-screen bg-emerald-900 flex items-center gap-2 justify-center">
+      <h1 class="text-3xl text-white">Have a device to donate? it’s Simple.</h1>
+      <button class=" hover:bg-gray-50 py-4 px-10 bg-white text-black rounded-md">
+        Find out how
+      </button>
+    </section>
+    <footer class="bg-black text-white py-8 px-4 md:px-14">
+      <div class="grid grid-cols-1 md:grid-cols-6 gap-6">
+        <div class="md:col-span-2">
+          <p>
+            We are at the forefront of promoting the progress of blockchain
+            technology, decentralized applications (DApps), smart contracts, and
+            other cutting-edge solutions. Our overarching mission is to catalyze
+            the adoption of Web3 technologies, cultivating an open and
+            interconnected digital landscape.
+          </p>
+        </div>
+        <div class="md:col-span-1">
+          <h1 class="font-bold text-lg">Community</h1>
+          <ul>
+            <li class="hover:text-gray-400"><a href="#">Medium</a></li>
+            <li class="hover:text-gray-400"><a href="#">Twitter</a></li>
+            <li class="hover:text-gray-400"><a href="#">Discord</a></li>
+            <li class="hover:text-gray-400"><a href="#">Telegram</a></li>
+          </ul>
+        </div>
+        <div class="md:col-span-1">
+          <h1 class="font-bold text-lg">Quick-links</h1>
+          <ul>
+            <li class="hover:text-gray-400"><a href="#">Support</a></li>
+            <li class="hover:text-gray-400"><a href="#">Enquiries</a></li>
+            <li class="hover:text-gray-400"><a href="#">WhatsApp</a></li>
+            <li class="hover:text-gray-400"><a href="#">Facebook</a></li>
+          </ul>
+        </div>
+
+        <div class="md:col-span-2">
+          <h1 class="text-4xl font-bold mb-4">Our Partners:</h1>
+          <div class="w-full flex gap-4">
+            <a href="http://egoncoin.com/"
+              ><img
+                src="./src/images/icons/egoncoin.JPG"
+                alt=""
+                class="w-10 h-10 rounded-md mb-4"
+            /></a>
+            <a href="http://althash.university/"
+              ><img
+                src="./src/images/althash.png"
+                alt=""
+                class="w-10 h-10 rounded-md mb-4"
+            /></a>
+            <a href="https://plapolyportal.com.ng/"
+              ><img
+                src="./src/images/poly.jpg"
+                alt=""
+                class="w-10 h-10 rounded-md mb-4"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center italic mt-4 md:mt-8">
+        2025 © <a class="" href="https://abimikuoshela.netlify.app/">Osh_la</a>
+      </div>
+    </footer>
+  </body>
+</html>
