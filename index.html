@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/59b558404f30ce4283383bbe5/e068a73a9fa08dfe3416a3009.js");</script>
+     <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>web3alliance</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="favicon-16x16.png" type="image/png" sizes="16x16">
+    <style>
+      
+        .slide-in-blurred-br{animation:slide-in-blurred-br 1.6s cubic-bezier(.23,1.000,.32,1.000) both}
+        @keyframes slide-in-blurred-br{0%{transform:translate(1000px,1000px) skew(80deg,10deg);transform-origin:0 100%;filter:blur(40px);opacity:0}100%{transform:translate(0,0) skew(0deg,0deg);transform-origin:50% 50%;filter:blur(0);opacity:1}}
+  
+        .slide-in-blurred-right{animation:slide-in-blurred-right 1.6s cubic-bezier(.23,1.000,.32,1.000) both}
+        @keyframes slide-in-blurred-right{0%{transform:translateX(1000px) scaleX(2.5) scaleY(.2);transform-origin:0 50%;filter:blur(40px);opacity:0}100%{transform:translateX(0) scaleY(1) scaleX(1);transform-origin:50% 50%;filter:blur(0);opacity:1}}
+        .slide-in-blurred-top{animation:slide-in-blurred-top 1.6s cubic-bezier(.23,1.000,.32,1.000) both}
+        @keyframes slide-in-blurred-top{0%{transform:translateY(-1000px) scaleY(1.5) scaleX(.1);transform-origin:50% 0;filter:blur(100px);opacity:0}100%{transform:translateY(0) scaleY(1) scaleX(1);transform-origin:50% 50%;filter:blur(0);opacity:1}}
+       
+        .slide-in-blurred-tl{animation:slide-in-blurred-tl 1.6s cubic-bezier(.23,1.000,.32,1.000) both}
+        @keyframes slide-in-blurred-tl{0%{transform:translate(-1000px,-1000px) skew(80deg,10deg);transform-origin:100% 0;filter:blur(40px);opacity:0}100%{transform:translate(0,0) skew(0deg,0deg);transform-origin:50% 50%;filter:blur(0);opacity:1}}
+
+        .text-focus-in{animation:text-focus-in 1s cubic-bezier(.55,.085,.68,.53) both}
+        @keyframes text-focus-in{0%{filter:blur(12px);opacity:0}100%{filter:blur(0);opacity:1}}
+        
+    .border-gradient-blue {
+      border-image: linear-gradient(to right, #87CEEB, #0077cc);
+      border-image-slice: 1;
+    }
+    .border-gradient-blue-inverse {
+      border-image: linear-gradient(to right, #0077cc, #87CEEB);
+      border-image-slice: 1;
+    }
+  </style>
+</head>
+<body class="font-sans overflow-x-hidden">
+<section id="Home" class="relative h-screen flex items-center">
+  <div class="absolute inset-0">
+    <video class="w-full h-full object-cover" autoplay loop muted playsinline>
+    <source src="./src/images/web3alliance.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+</div>
+  <div class="relative z-10 text-white text-left md:ml-14 p-4 md:p-0 md:w-1/2 text-focus-in">
+    <h1 class="text-4xl md:text-8xl font-extrabold mb-2">Web3Alliance</h1>
+    <p class="text-lg md:text-3xl">Your gateway to the decentralized web revolution!</p>
+    <a href="#About" class="inline-block mt-4 rounded-full border-2 border-white py-2 px-6 hover:bg-white hover:text-black transition-all duration-500 hover:border-transparent hover:shadow-lg">Learn More</a>
+  </div>
+  <div class="w-full p-4 text-white bottom-0">
+    <div class="flex md:flex-row justify-around items-end">
+       <button class="cursor-pointer">
+            <a href="https://tribe.theweb3alliance.org/" class="font-bold text-xs border-b-2 md:rounded md:hover:bg-white md:hover:text-black md:hover:border-transparent md:hover:shadow-lg md:px-2 md:py-2 md:text-lg md:px-4 md:border-2  md:mb-0">
+           Web3.0Tribe
+        </a>
+       </button>
+        <button class="cursor-pointer">        
+        <a href="http://web3.0fest.theweb3alliance.org/" class="text-xs border-b-2 md:rounded md:hover:bg-white md:hover:text-black md:hover:border-transparent md:hover:shadow-lg md:px-2 md:py-2 md:text-lg md:px-4 md:border-2">
+           Web3.0Fest
+        </a>
+        </button>
+    </div>
+</div>
+
+  <nav class=" absolute text-white top-0 left-0 right-0 p-4 z-10">
+    <div class="flex justify-between">
+      <div class="text-2xl font-bold">
+        <img class=" w-10 h-10 md:w-12 md:h-12" src="./src/images/icons/logo.jpeg" alt="">
+      </div>
+      <div class="md:hidden">
+        <button id="mobile-menu-button" class="text-white focus:outline-none">
+          <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+      </div>
+      <div class="hidden md:flex space-x-4">
+        <a href="#Home" class="hover:underline">Home</a>
+        <a href="#About" class="hover:underline">About</a>
+        <a href="#Contact" class="hover:underline">Contact</a>
+        <a href="https://tribe.theweb3alliance.org/" class="hover:underline">Web3.0Tribe</a>
+        <a href="" class="hover:underline">Web3.0Fest</a>
+      </div>
+    </div>
+  </nav>
+  
+  <div id="mobile-menu" class="md:hidden fixed inset-0 bg-gray-800 bg-opacity-75 z-50 hidden">
+    <div class="flex justify-end p-4">
+      <button id="close-mobile-menu" class="text-white focus:outline-none">
+        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+    </div>
+    <div class="flex flex-col items-end p-4 space-y-4">
+      <a href="#Home" class="text-white">Home</a>
+      <a href="#About" class="text-white">About</a>
+      <a href="#Contact" class="text-white">Contact</a>
+      <a href="https://tribe.theweb3alliance.org/" class="text-white">Web3.0Tribe</a>
+      <a href="http://web3.0fest.theweb3alliance.org/" class="text-white">Web3.0Fest</a>
+    </div>
+  </div>
+  
+</section>
+<section id="About" class="bg-gray-900 text-white overflow-hidden">
+<div class="min-h-screen flex items-center justify-center ">
+  <div class="container mx-auto flex items-center">
+    <!-- About Text -->
+    <div class="w-full md:w-1/2 p-8 ">
+      <h1 class="md:text-4xl font-bold mb-4">About Us</h1>
+      <p class="md:text-lg leading-relaxed">
+        Welcome to the Web3 Alliance, a global coalition of seasoned Web3 and blockchain experts with a collective experience exceeding 8 years. 
+        Committed to collaboration, research, and development, we champion the advancement of blockchain technology,
+         decentralized applications (DApps), smart contracts, and other innovative solutions. 
+         Our mission is to propel the adoption of Web3 technologies, fostering an open and interconnected digital landscape.
+          With a vision for a future where decentralized technologies drive inclusivity, security, and connectivity, 
+          the Web3 Alliance pioneers the evolution of the decentralized web. Join us in shaping a digital environment that transcends boundaries,
+         creating opportunities for widespread adoption and positive impact across industries.</p>
+    </div>
+
+    <!-- Image Section -->
+    <div class="hidden md:block md:p-6 w-1/2 overflow-hidden ">
+      <img src="./src/images/stats.svg" alt="About Us" class="object-cover w-full h-full opacity-90">
+      <div class="absolute inset-0"></div>
+     
+    </div>
+  </div>
+</div>
+</section>
+<section class="bg-black text-white py-16">
+  <div class=" px-6 md:px-12 flex flex-col md:flex-row items-center gap-10">
+    
+  
+    <div class="w-full md:w-1/2">
+      <img src="./src/images/mission.svg" 
+           alt="Mission Illustration" 
+           class="object-cover w-full h-full rounded-lg shadow-lg opacity-95">
+    </div>
+
+
+    <div class="w-full md:w-1/2 space-y-8">
+
+      <div>
+        <h3 class="text-2xl md:text-3xl font-bold  mb-4">Mission</h3>
+        <p class="text-gray-300 md:text-lg leading-relaxed">
+          The <span class="font-semibold text-white">Web3 Alliance</span> is committed to fostering 
+          collaboration, research, and development within the Web3 ecosystem. 
+          Our focus includes promoting blockchain technology, decentralized applications (DApps), 
+          smart contracts, and other innovative solutions.  
+          <br><br>
+          Our mission is to drive the adoption of Web3 technologies while empowering 
+          a more open, secure, and interconnected digital landscape.
+        </p>
+      </div>
+
+     
+      <div>
+        <h3 class="text-2xl md:text-3xl font-bold  mb-4">Vision</h3>
+        <p class="text-gray-300 md:text-lg leading-relaxed">
+          We envision a future where decentralized technologies play a central role 
+          in shaping a more inclusive, transparent, and resilient digital economy.  
+          <br><br>
+          Through collaboration and innovation, <span class="font-semibold text-white">Web3 Alliance</span> 
+          strives to advance the decentralized web, create opportunities for widespread adoption, 
+          and drive positive impact across industries worldwide.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-gray-50 py-16 px-6 md:px-20">
+  <div class="grid md:grid-cols-2 gap-12 items-center">
+    
+
+    <div>
+  
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-2">
+        Digital Inclusion Project
+      </h2>
+      <p class="text-lg text-gray-600 mb-8">
+        A Collaboration between 
+        <span class="font-semibold">Althash University California</span>, 
+        <span class="font-semibold">Plateau State Polytechnic</span> & 
+        <span class="font-semibold">Web3.0 Alliance Ltd</span>
+      </p>
+
+      <p class="text-gray-700 mb-6 leading-relaxed">
+        The Digital Inclusion Project is a strategic educational initiative designed to bridge the
+        gap between emerging technologies, local communities and students. Jointly implemented by
+        Althash University California, Plateau State Polytechnic, and Web3.0 Alliance Ltd, the
+        project empowers learners with the knowledge, skills, and resources needed to thrive in the
+        rapidly evolving digital economy.
+      </p>
+
+
+      <h3 class="text-2xl font-semibold text-gray-800 mt-10 mb-4">Our Mission</h3>
+      <p class="text-gray-700 mb-6 leading-relaxed">
+        To make advanced digital education—covering blockchain, artificial intelligence, Web3, and
+        other emerging technologies—accessible to individuals in Plateau State and beyond,
+        regardless of socioeconomic background.
+      </p>
+
+  
+      <h3 class="text-2xl font-semibold text-gray-800 mt-10 mb-4">Objectives</h3>
+      <ol class="list-decimal pl-6 space-y-3 text-gray-700">
+        <li><span class="font-semibold">Democratize Access to Technology</span> – Ensure that
+          students and community members, including those in underserved areas, can access quality
+          tech education and digital tools.</li>
+        <li><span class="font-semibold">Build Local Capacity</span> – Train participants in
+          in-demand digital skills, enabling them to compete globally while solving local problems.</li>
+        <li><span class="font-semibold">Foster Innovation & Entrepreneurship</span> – Equip learners
+          to create technology-driven solutions that stimulate economic growth and social
+          development.</li>
+        <li><span class="font-semibold">Promote Academic-Industry Collaboration</span> – Connect
+          learners to real-world projects, mentors, and industry networks to enhance career
+          readiness.</li>
+      </ol>
+    </div>
+
+
+    <div class="flex justify-center">
+      <img src="./src/images/atlash.jpg" alt="Digital Inclusion Project" 
+           class="rounded-2xl shadow-lg w-full max-w-md object-cover" />
+    </div>
+  </div>
+
+  
+  <div class=" mt-16">
+    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Key Features</h3>
+    <ul class="space-y-3 text-gray-700 list-disc pl-6">
+      <li><span class="font-semibold">Hybrid Learning Model</span> – Online + on-campus flexibility.</li>
+      <li><span class="font-semibold">Globally Recognized Curriculum</span> – Covering blockchain, fintech, AI, and related fields.</li>
+      <li><span class="font-semibold">Practical, Project-Based Training</span> – Work on real-world problems and portfolio-ready projects.</li>
+      <li><span class="font-semibold">Entrepreneurship Activation</span> – Courses and mentorship to encourage tech-based startups.</li>
+      <li><span class="font-semibold">Community Outreach</span> – Free slots for grassroots learners with potential.</li>
+    </ul>
+
+    <h3 class="text-2xl font-semibold text-gray-800 mt-10 mb-4">Expected Impact</h3>
+    <ul class="space-y-3 text-gray-700 list-disc pl-6">
+      <li><span class="font-semibold">Digital Skills for All</span> – Equip hundreds yearly with future-ready skills.</li>
+      <li><span class="font-semibold">Economic Empowerment</span> – Create access to jobs, internships, and entrepreneurial opportunities.</li>
+      <li><span class="font-semibold">Innovation Ecosystem</span> – Position Plateau State as a hub for technology & innovation.</li>
+      <li><span class="font-semibold">Startup Generation</span> – Inspire student & community-led startups for job creation and resilience.</li>
+    </ul>
+
+
+    <p class="text-gray-700 mt-10 leading-relaxed">
+      Through the Digital Inclusion Project, we are not only educating the next generation of tech
+      leaders but also igniting the entrepreneurial spirit needed to transform ideas into impactful
+      ventures—ensuring no community is left behind in the digital revolution.
+    </p>
+  </div>
+ <div class="py-8 px-4 sm:px-6 lg:px-8 rounded-xl  max-w-xl mx-auto">
+  <h3 class="text-2xl sm:text-3xl font-semibold text-gray-800 mb-6 text-center">
+    For More Information
+  </h3>
+
+  <!-- Email -->
+  <div class="mb-6">
+    <a 
+      href="mailto:official@theweb3alliance.org?subject=Digital Inclusion Project" 
+      class="block text-gray-700 leading-relaxed w-full text-center bg-white border-2 border-blue-800 font-medium px-4 py-3 rounded-lg shadow-sm hover:bg-blue-900 hover:text-white transition-colors duration-300"
+    >
+      Click Here To Send Us An Email
+    </a>
+  </div>
+
+  <!-- Phone -->
+  <div class="flex flex-col sm:flex-row sm:items-center sm:justify-center gap-2">
+    <label class="text-lg font-semibold text-gray-800" for="number">
+      Phone Number:
+    </label>
+    <p id="number" class="text-gray-700 leading-relaxed font-medium">
+      09031799036
+    </p>
+  </div>
+</div>
+
+</section>
+
+  <section class="md:text-4xl font-bold bottom-0 bg-gray-900 flex items-center justify-center gap-2 p-4 md:p-8">
+    <button class="border-2 border-gradient-blue hover:text-gray-400 px-2 md:px-5 md:py-2">
+      <a href="mailto:official@theweb3alliance.org?subject=Partner" class="text-white">Become A Partner</a>
+    </button>
+    
+  </section>
+<section id="Contact" class="h-auto mx-auto p-8 bg-gray-100 rounded-2xl shadow-lg">
+  <h1 class="md:text-5xl text-2xl font-bold text-gray-800 text-center mb-12">Get In Touch</h1>
+  <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-10">
+    <div class="space-y-6">
+      <h2 class="md:text-3xl text-xl font-semibold text-gray-700">We Would Love To Hear From You</h2>
+      <ul class="space-y-4 md:text-xl text-gray-600">
+        <li class="flex items-center">
+          <img src="./src/images/icons/mail.png" alt="Email Icon" class="w-6 h-6 mr-3">
+          <a href="mailto:official@theweb3alliance.org?subject=GetInTouch" class="hover:text-gray-900 transition">Email</a>
+        </li>
+        <li class="flex items-center">
+          <img src="./src/images/icons/facebook.png" alt="Facebook Icon" class="w-6 h-6 mr-3">
+          <a href="#" class="hover:text-gray-900 transition">Facebook</a>
+        </li>
+        <li class="flex items-center">
+          <img src="./src/images/icons/twitter.png" alt="Twitter Icon" class="w-6 h-6 mr-3">
+          <a href="#" class="hover:text-gray-900 transition">Twitter</a>
+        </li>
+        <li class="flex items-center">
+          <img src="./src/images/icons/linkedin.png" alt="LinkedIn Icon" class="w-6 h-6 mr-3">
+          <a href="#" class="hover:text-gray-900 transition">LinkedIn</a>
+        </li>
+        <li class="flex items-center">
+          <img src="./src/images/icons/telegram.png" alt="Telegram Icon" class="w-6 h-6 mr-3">
+          <a href="#" class="hover:text-gray-900 transition">Telegram</a>
+        </li>
+      </ul>
+    </div>
+    <div class="flex justify-center">
+      <img src="./src/images/contact-us.png" alt="Contact Us" class="w-full max-w-md rounded-xl shadow-md">
+    </div>
+  </div>
+</section>
+
+
+<footer class="bg-black  text-white py-8 px-4 md:px-14">
+  <div class="grid grid-cols-1 md:grid-cols-6 gap-6">
+    <div class="md:col-span-2">
+      <p>
+        
+We are at the forefront of promoting the progress of blockchain technology, decentralized applications (DApps), smart contracts, and other cutting-edge solutions. Our overarching mission is to catalyze the adoption of Web3 technologies, cultivating an open and interconnected digital landscape.  </p>
+    </div>
+    <div class="md:col-span-1">
+      <h1 class="font-bold text-lg">Community</h1>
+      <ul>
+        <li class="hover:text-gray-400"><a href="#">Medium</a></li>
+        <li class="hover:text-gray-400"><a href="#">Twitter</a></li>
+        <li class="hover:text-gray-400"><a href="#">Discord</a></li>
+        <li class="hover:text-gray-400"><a href="#">Telegram</a></li>
+      </ul>
+    </div>
+    <div class="md:col-span-1">
+      <h1 class="font-bold text-lg">Quick-links</h1>
+      <ul>
+        <li class="hover:text-gray-400"><a href="#">Support</a></li>
+        <li class="hover:text-gray-400"><a href="#">Enquiries</a></li>
+        <li class="hover:text-gray-400"><a href="#">WhatsApp</a></li>
+        <li class="hover:text-gray-400"><a href="#">Facebook</a></li>
+      </ul>
+    </div>
+   
+    <div class="md:col-span-2">
+         <h1 class="text-4xl font-bold mb-4 ">Our Partners:</h1>
+      <div class=" w-full flex gap-4">
+        <a href="http://egoncoin.com/"><img src="./src/images/icons/egoncoin.JPG" alt="" class="w-10 h-10 rounded-md mb-4"></a>
+          <a href="http://althash.university/"><img src="./src/images/althash.png" alt="" class="w-10 h-10 rounded-md mb-4"></a>
+          <a href="https://plapolyportal.com.ng/"><img src="./src/images/poly.jpg" alt="" class="w-10 h-10 rounded-md mb-4"></a>
+      </div>
+    </div>
+  </div>
+  <div class="flex justify-center italic mt-4 md:mt-8">2025 © <a class="" href="https://abimikuoshela.netlify.app/">Osh_la n Darshes</a></div>
+</footer>
+<script src="https://unpkg.com/scroll-timeline-polyfill"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const fadeInTimeline = new ScrollTimeline({
+    scrollSource: document.scrollingElement,
+    orientation: 'vertical',
+    timeRange: { start: 0, end: 1 },
+  });
+
+  // Get all elements with animation classes
+  const elementsToAnimate = document.querySelectorAll('.slide-in-blurred-right, .slide-in-blurred-top, .slide-in-blurred-tl');
+
+  // Create a scroll timeline animation for each element
+  elementsToAnimate.forEach(element => {
+    const fadeInKeyframes = [
+      { opacity: 0, transform: 'translateY(100px)', offset: 0 }, // Add transform for better effect
+      { opacity: 1, transform: 'translateY(0)', offset: 1 },
+    ];
+    fadeInTimeline.addNewAnimation(
+      new KeyframeEffect(element, fadeInKeyframes, { duration: 1000 })
+    );
+  });
+});
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var video = document.getElementById('myVideo');
+    var loopStartTime = 3; // Set the time (in seconds) where you want the loop to start
+
+    // Play the video
+    video.play();
+
+    // Loop the last part when the video ends
+    video.addEventListener('ended', function() {
+      video.currentTime = loopStartTime;
+      video.play();
+    });
+  });
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+    document.addEventListener('DOMContentLoaded', function() {
+      const mobileMenuButton = document.getElementById('mobile-menu-button');
+      const closeMobileMenuButton = document.getElementById('close-mobile-menu');
+      const mobileMenu = document.getElementById('mobile-menu');
+  
+      mobileMenuButton.addEventListener('click', function() {
+        mobileMenu.classList.remove('hidden');
+      });
+  
+      closeMobileMenuButton.addEventListener('click', function() {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+</script>
+
+</body>
+</html>
+
+
+</body>
+</html>
